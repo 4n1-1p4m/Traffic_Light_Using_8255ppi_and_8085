@@ -17,8 +17,11 @@
 ;PORT C   : 22H
 ;PORT CWR : 23H
 
-MVI D, 1; FOR LOOP
 
+MVI A, 80H;
+OUT 23H; TO WORK IN CWR MODE
+
+MVI D, 1; FOR LOOP
 LOOP: 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;Green for North and RED For all the other direction
